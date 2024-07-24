@@ -9,6 +9,7 @@ module.exports = defineConfig({
   transpileDependencies: true,
   configureWebpack: {
     plugins: [
+      new NodePolyfillWebpackPlugin,
       ComponnetsPlugin({ resolvers: [ VantResolver() ] })
     ]
   }
